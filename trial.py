@@ -100,7 +100,7 @@ def generate_mealplan(model, person):
             prompt += f" Set my day to {person['days']}."
         if person.get('cuisine') is not None:
             prompt += f" I want this type of cuisine:- {person['cuisine']} "
-        # prompt += f" And dont give ingredients or instructions for receipe but generate only meal plan"
+        prompt += f" And give meal plan for breakfast, brunch, lunch and dinner"
         return prompt
     
 
